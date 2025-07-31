@@ -1,0 +1,84 @@
+  /*----------CSS DACTIOLOGIA-----------*/
+ body.b1{
+    background-color: rgba(248, 196, 237, 0.977);
+  }
+  header.he2 {
+    padding: 40px;
+    text-align: left;
+    color: rgba(124, 5, 160, 0.984);
+    font-family:cursive;
+    font-weight: 10px;
+  }
+   div.nav2{
+    overflow: hidden;
+    background-color: rgb(151, 1, 159);
+    margin-top: 40px; 
+  }
+  div.nav2 a{
+    float:left;
+    display: block;
+    color: #e0d8d8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+  }
+   div.nav2 a:hover {
+    background-color: rgb(228, 14, 247);
+    color: black;
+  }
+ /*----------CARRUSEL-----------------------*/
+
+ /* Contenedor general del carrusel */
+.carrusel-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px; 
+}
+
+/* Carrusel estilo pantallita */
+#carouselVideos {
+  width: 600px;
+  max-width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  background-color: #111;
+}
+
+/* Video centrado y adaptado */
+.video-carrusel {
+  width: 100%;
+  height:400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Título encima del video */
+.carousel-caption {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000;
+  text-align: center;
+  width: auto;
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+  .video-carrusel {
+    height: 200px;
+  }
+  .carousel-caption {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
